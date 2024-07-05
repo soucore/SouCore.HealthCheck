@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-HealthCheck.MongoDb.Sample-0E54F74A-B637-4E76-956E-C9B4ADA8817A</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Soucore.HealthCheck.MongoDb\Soucore.HealthCheck.MongoDb.csproj" />
+    <ProjectReference Include="..\..\tests\Soucore.HealthCheck.Test\Soucore.HealthCheck.Test.csproj" />
+  </ItemGroup>
+</Project>

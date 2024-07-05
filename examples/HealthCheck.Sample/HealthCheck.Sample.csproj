@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-HealthCheck.Sample-3555CCD4-A572-4689-B566-DABD1C06FD8A</UserSecretsId>
+	<SonarQubeExclude>true</SonarQubeExclude>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Mongo2Go" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Soucore.HealthCheck.MongoDb\Soucore.HealthCheck.MongoDb.csproj" />
+  </ItemGroup>
+</Project>

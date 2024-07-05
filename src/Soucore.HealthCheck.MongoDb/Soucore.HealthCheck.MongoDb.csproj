@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>netcoreapp3.1;net5.0;net6.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<Title>HealthCheckMongoDb Worker</Title>
+	<Copyright>ViaHub - 2022</Copyright>
+	<RepositoryUrl>https://github.com/viavarejo-internal/Via.HealthCheck/tree/master/src/HealthCheck.MongoDb</RepositoryUrl>
+	<Version>$(Version)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Soucore.HealthCheck\Soucore.HealthCheck.csproj" />
+  </ItemGroup>
+
+</Project>

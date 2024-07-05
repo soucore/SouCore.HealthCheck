@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-HealthCheck.Kafka.Sample-605CBC8C-5712-4C63-B86F-D7E5BE1F9D5D</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.9.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Soucore.HealthCheck.Kafka\Soucore.HealthCheck.Kafka.csproj" />
+    <ProjectReference Include="..\..\src\Soucore.HealthCheck\Soucore.HealthCheck.csproj" />
+    <ProjectReference Include="..\..\tests\Soucore.HealthCheck.Test\Soucore.HealthCheck.Test.csproj" />
+  </ItemGroup>
+</Project>
